@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Turnos - Espacio de salud</title>
+</head>
+
+<body>
+    <header class="gridHeader">
+
+        <div class="titlePages">
+
+            <div class="divTitle">
+                <h1 class="h1Title">Sacar Turno</h1>
+            </div>
+
+            <div class="divImgPages">
+                <img class="imgLogoPages" src="../img/logoSolo.JPG" alt="Logo de la empresa"> 
+            </div>
+
+        </div>
+
+        <!-- Main menu -->
+        <nav>
+            <ul class="gridMenu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="gridMainPages">
+        <div>
+            <img class="imgMain" src="../img/doc.jpg" alt="Imagen de presentación">
+        </div>
+        <form class="formMain">
+            <div>
+                <label class="label" for="profesiones">Seleccione profesión:</label>
+                <select name="profesiones" id="profesiones">
+                    <option value="uno">Odontología</option>
+                    <option value="dos">Nutricionista</option>
+                    <option value="tres">Psicología</option>
+                </select>
+            </div>
+            <div>
+                <label class="label" for="dia">Día:</label>
+                <input class="input" type="date" name="dia">
+            </div>
+            <div>
+                <label class="label" for="hora">Hora:</label>
+                <input class="input" type="time" name="hora">
+            </div>
+            <div>
+            <input class="input" type="submit" name="submit" value="Confirmar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="gridFooter">
+        <div class="contactoFooter">
+            <p>+54 02974 121682</p>
+            <p>nahuelramosveron@hotmail.com</p>
+        </div>
+        <div class="redesFooter">
+            <img class="whatsapp" src="../img/whatsapp.png" alt="Whatsapp">
+            <img class="instagram" src="../img/instagram.png" alt="Instagram">
+            <img class="facebook" src="../img/facebook.svg" alt="Facebook">
+        </div>
+    </footer>
+</body>
+</html>

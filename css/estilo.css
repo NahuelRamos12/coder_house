@@ -1,0 +1,249 @@
+/* For everything in general */
+*{
+    margin: 0;
+    padding: 0;
+}
+/*---------------------- Header ----------------------*/
+.gridHeader{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: rgb(255, 255, 255);
+}
+/*---------- Title ----------*/
+.titleIndex{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.titlePages{
+    display: flex;
+    align-items: center;
+}
+    .divTitle{
+        text-align: center;
+        background-color: #1974b4;
+        width: 100%;
+        height: 50px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+        .h1Title{
+            margin: 5px;
+            color: white;
+            font-family: roboto;
+        }
+
+    .aLogoIndex{
+        background-color: white;
+        border: none;
+    }
+        .imgLogoIndex{
+            width: 375px;
+            height: 150px;
+        }
+    .imgLogoPages{
+        margin: 15px 50px;
+        width: 250px;
+        height: 150px;
+    }
+/*---------- Menu Bar ----------*/
+    .gridMenu{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 15px 0px;
+        column-gap: 5px;
+    }
+        li{
+            display: flex;
+            background-color: #05a39b;
+            border-radius: 40px;
+        }
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: roboto;
+                font-size: large;
+                margin: auto;
+                padding: 15px;
+            }
+/*---------------------- Main ----------------------*/
+main{
+    background-color:  #1974b4;
+    height: auto;
+}
+.gridMainIndex{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+    .hMain{
+        text-align: center;
+        color: white;
+        font-family: roboto;
+        padding: 35px;
+    }
+        .aMain{
+            color: white;
+            font-family: roboto;
+            align-items: center;
+            border: solid 1px #05a39b;
+            border-radius: 40px;
+        }
+    .gridRowTwo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+        .imgMain{
+            height: 100%;
+            width: 100%;
+        }
+        .pMain{
+            display: flex;
+            align-items: center;
+            margin: 20px 20px;
+            font-family: roboto;
+            color: white;
+            text-align: justify;
+        }
+.gridMainPages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+    .formMain{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        margin: 20px;
+    }
+    .label{
+        color: white;
+        font-family: roboto;
+        font-size: 20px;
+    }
+    #profesiones{
+        border: solid 1px;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 15px;
+        font-family: roboto;
+        margin: 0 15px;
+    }
+    .input{
+        margin: 35px;
+        padding: auto;
+        height: 30px;
+        width: 30%;
+        border-radius: 5px;
+        margin: 0 15px;
+    }
+.gridMainMap{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 600px;
+}
+    .map{
+        width: 100%;
+        height: 90%;
+    }
+    .pMap{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: roboto;
+        font-size: x-large;
+    }
+.formulario{
+    display: flex;
+    align-items: center;
+}
+    .fieldsetMain{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        text-align: center;
+        row-gap: 20px;
+        padding: 20px;
+        margin: 0 20px 0 20px;
+        width: 100%;
+    }
+/*---------------------- Footer ----------------------*/
+footer{
+    height: 100px;
+    background-color: #1974b4;
+    margin: 15px 0;
+}
+.gridFooter{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+    .contactoFooter{
+        text-align: center;
+        color: white;
+        font-family: roboto;
+    }
+    .redesFooter{
+        text-align: center;
+    }
+    .whatsapp{
+        width: 55px;
+        height: 30px;
+    }
+    .instagram{
+        padding: 0 10px;
+        width: 32px;
+        height: 31px;
+    }
+    .facebook{
+        padding: 0 10px;
+        width: 30px;
+        height: 33px;
+    }
+/*-------------------- @media queries --------------------*/
+@media (max-width: 900px){
+    /* Index main */
+    .gridRowTwo{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Pages main */ 
+    .gridMainPages{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Main menu */
+@media (max-width: 450px){
+    a{
+        font-size: small;
+    }
+}
+/* Pages titles */
+@media (max-width: 600px){
+    .h1Title{
+        padding: 10px;
+        font-size: medium;
+    }
+}
+@media (max-width: 491px){
+    .titlePages{
+        display: flex;
+        flex-direction: column;
+    }
+    .divTitle{
+        margin: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+/* Title of Ubicacion */
+@media (max-width: 925px){
+    .pMap{
+        font-size: large;
+    }
+}
+@media (max-width: 690px){
+    .pMap{
+        font-size: medium;
+    }
+}
