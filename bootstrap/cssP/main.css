@@ -1,0 +1,325 @@
+/*------------------ For everything ------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------- Header ----------------------*/
+.gridHeader{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    background-color: rgb(255, 255, 255);
+}
+/*---------- Title ----------*/
+.titleIndex{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+    .aLogoIndex{
+        background-color: white;
+        border: none;
+        transition: 0.5s;
+    }
+        .imgLogoIndex{
+            margin: 20px 0;
+            width: 375px;
+            height: 150px;
+            animation-name: welcome;
+            animation-iteration-count: initial;
+            animation-duration: 1.7s;
+        }
+.titlePages{
+    display: flex;
+    align-items: center;
+}
+    .divTitle{
+        text-align: center;
+        background-color: #1974b4;
+        width: 100%;
+        height: 50px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+        .h1Title{
+            margin: 5px;
+            color: white;
+            font-family: roboto;
+            font-size: xx-large;
+        }
+    .imgLogoPages{
+        margin: 15px 50px;
+        width: 250px;
+        height: 150px;
+        animation-name: heart;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+        animation-direction: alternate;
+    }
+/*---------- Menu Bar ----------*/
+ul{
+    margin: 120px 0;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: roboto;
+    font-size: large;
+    color: #1974b4;
+}
+
+/*---------------------- Main ----------------------*/
+main{
+    background-image: linear-gradient(to bottom, white, #1974b4);
+    height: auto;
+}
+.gridMainIndex{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+    .hMain{
+        text-align: center;
+        font-family: roboto;
+        padding: 35px;
+    }
+        .aMain{
+            font-family: roboto;
+            font-size: large;
+            align-items: center;
+            text-decoration: none;
+            padding: 15px;
+            background-color: #05a39b;
+            border-radius: 40px;
+            color: white;
+        }
+    .gridRowTwo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+        .imgMain{
+            height: 100%;
+            width: 100%;
+        }
+        .pMain{
+            display: flex;
+            align-items: center;
+            margin: 40px 40px 40px 20px;
+            font-family: roboto;
+            color: white;
+            text-align: justify;
+        }
+.gridMainPages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+    .divImgMain{
+        margin: 40px 20px 40px 40px;
+    }
+    .formMain{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin: 100px;
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+    .label{
+        width: 100%;
+        background-color: #05a39b;
+        color: white;
+        font-family: roboto;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+    #profesiones{
+        border: solid 1px;
+        border-radius: 5px;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        font-family: roboto;
+        padding: 0 5px;
+    }
+    .input{
+        height: 30px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 0 5px;
+    }
+.gridMainMap{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    height: 600px;
+}
+    .map{
+        width: 100%;
+        height: 90%;
+    }
+    .pMap{
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        color: #1974b4;
+        font-family: roboto;
+        font-size: x-large;
+        margin-top: 10px;
+    }
+.formulario{
+    display: flex;
+    align-items: center;
+}
+    .fieldsetMain{
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+        text-align: center;
+        row-gap: 20px;
+        margin: 40px 40px 40px 20px;
+        width: 100%;
+    }
+    .msj{
+        height: 100px;
+        border: solid black 2px;
+    }
+
+/*---------------------- Footer ----------------------*/
+footer{
+    margin: 30px 0;
+    background-color: #1974b4;
+}
+p.col{
+    margin: 40px 0;
+    text-align: center;
+    color: white;
+}
+.whatsapp{
+    width: 70px;
+    transition: 0.5s;
+}
+    
+/*-------------------- @media queries --------------------*/
+@media (max-width: 900px){
+    /* Index main */
+    .gridRowTwo{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Pages main */ 
+    .gridMainPages{
+        display: flex;
+        flex-direction: column;
+    }
+    .divImgMain{
+        margin: 40px;
+    }
+    .pMain{
+        margin: 40px;
+    }
+    .fieldsetMain{
+        margin: 40px;
+    }
+}
+/* Img of Logo of the Index*/
+@media (max-width: 1108px){
+    .imgLogoIndex{
+        transform: scale(0.8);
+        animation-name: welcomeOne;
+    }
+}
+@media (max-width: 735px){
+    .imgLogoIndex{
+        transform: scale(0.6);
+        animation-name: welcomeTwo;
+    }
+}
+/* Header menu */
+@media (max-width: 1108px){
+    ul{
+        margin: 74px 0;
+    }
+}
+@media (max-width: 735px){
+    ul{
+        margin: 34px 0;
+    }
+}
+@media (max-width: 641px){
+    ul{
+        margin: 4px 0;
+    }
+}
+/* Pages titles */
+@media (max-width: 600px){
+    .h1Title{
+        padding: 10px;
+        font-size: medium;
+    }
+}
+@media (max-width: 491px){
+    .titlePages{
+        display: flex;
+        flex-direction: column;
+    }
+    .divTitle{
+        margin: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+/* Title of Ubicacion */
+@media (max-width: 925px){
+    .pMap{
+        font-size: large;
+    }
+}
+@media (max-width: 690px){
+    .pMap{
+        font-size: medium;
+    }
+}
+
+/*----------------- Animations -----------------*/
+.aLogoIndex:hover{
+    transform: scale(1.1);
+    rotate: 360;
+}
+.whatsapp:hover{
+    transform: scale(1.3);
+}
+/* Index */
+@keyframes welcome {
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+    @keyframes welcomeOne {
+        from{
+            transform: scale(0.1);
+        }
+        to{
+            transform: scale(0.8);
+        }
+    }
+    @keyframes welcomeTwo {
+        from{
+            transform: scale(0.1);
+        }
+        to{
+            transform: scale(0.6);
+        }
+    }
+/* Pages */
+@keyframes heart {
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssP/main.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <!-- link of bootstrap -->
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Turnos - Espacio de salud</title>
+</head>
+
+<body>
+    <header class="gridHeader">
+
+        <div class="titlePages">
+            <div class="divTitle">
+                <h1 class="h1Title">Sacar Turno</h1>
+            </div>
+            <div class="divImgPages">
+                <img class="imgLogoPages" src="../img/logoSolo.jpg" alt="Logo de la empresa"> 
+            </div>
+        </div>
+
+        <!-- Header menu -->
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="sacarTurno.html">Sacar Turno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gridMainPages">
+        <div class="divImgMain">
+            <img class="imgMain" src="../img/doc.jpg" alt="Imagen de presentación">
+        </div>
+        <form class="formMain">
+            <div>
+                <label class="label" for="profesiones">Profesión</label>
+            </div>
+            <div>
+                <select name="profesiones" id="profesiones">
+                    <option value="uno">Odontología</option>
+                    <option value="dos">Nutricionista</option>
+                    <option value="tres">Psicología</option>
+                </select>
+            </div>
+            <div>
+                <label class="label" for="dia">Día</label>
+            </div>
+            <div>
+                <input class="input" type="date" name="dia">
+            </div>
+            <div>
+                <label class="label" for="hora">Hora</label>
+            </div>
+            <div>
+                <input class="input" type="time" name="hora">
+            </div>
+            <div>
+            <input class="input" type="submit" name="submit" value="Confirmar">
+            </div>
+        </form>
+    </main>
+
+    <!--clase padre-->
+    <footer class="container-fluid">    
+        <!-- clase para la fila del contenedor -->
+        <div class="row">
+            <!--columnas de la fila-->
+            <p class="col">Obras sociales</p>
+            <p class="col">nahuelramosveron@hotmail.com</p>
+            <p class="col">+54 2974 123456</p>
+            <p class="col"><img class="whatsapp" src="../img/whatsapp.png" alt="Whatsapp"></p>
+        </div>
+    </footer>
+
+    <!-- Link js bootstrap -->
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
